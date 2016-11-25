@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#Selection1").click(function(){
+        $("p").hide(1000);
+    });
+    $("#Selection2").click(function(){
+        $("p").hide(1);
+    });
+    $("#Selection3").click(function(){
+      var p = $("p");
+       p.animate({height: '10px', opacity: '0.4'}, "slow");
+        p.animate({width: '10px', opacity: '0.8'}, "slow");
+        p.animate({height: '200px', opacity: '0.4'}, "slow");
+        p.animate({width: '200px', opacity: '0.8'}, "slow");
+    });
+     $("#Selection4").click(function(){
+      var p = $("p");
+      p.animate({fontSize: '0.01em'}, "slow");
+      p.animate({height: '10px', opacity: '0.46'}, "slow");
+      }); 
+     $("#Selection5").click(function(){
+       var p = $("p");
+       p.animate({fontSize: '25em'}, "slow");
+       p.animate({fontSize: '-25em'}, "slow");    
+        p.animate({width: '200px', opacity: '0'}, "slow");
+       });    
+});
+</script>
+</head>
+<body>
+
+<p><img src="https://lh6.googleusercontent.com/-L7XyKRm91aA/VVs6rucmJzI/AAAAAAAAAW0/6KGFwWyDkx0/s256-no/P009.png"></p>
+
+<button id="Selection1">Selection1</button>
+<button id="Selection2">Selection2</button>
+<button id="Selection3">Selection3</button>
+<button id="Selection4">Selection4</button>
+<button id="Selection5">Selection5</button>
+
+</body>
+</html>
